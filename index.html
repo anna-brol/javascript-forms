@@ -9,42 +9,79 @@
        <link rel="stylesheet" href="style.css">
        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
        <link href="//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse" rel="stylesheet" type="text/css"/>
+       <link href="https://fonts.googleapis.com/css2?family=Varela+Round" rel="stylesheet">
     </head>
    <body>
 <div class="container">
 
-        <div class="box">
-            <div class="opacity">
-                <p class="text">
-                    <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
-                    ODIN</p>
-            </div>
-            <footer>Photo by Halie West on Unsplash</footer>
+    <div class="box">
+        <div class="opacity">
+            <p class="text">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                ODIN</p>
         </div>
- <div>
+        <footer>Photo by Halie West on Unsplash</footer>
+    </div>
+
+    <div class =right_side>
         <div class="box_1">
-            <p>This is nos a real online service! You know you need something like this in your life to help you realize your deepest dreams</p>
-            <p>Sign up now to get started</p> <!-- now kursywą -->
-            <p>You know you want to</p> <!-- know kursywą -->
+            <p class="text_1">This is nos a real online service! You know you need something 
+                <br /> 
+                like this in your life to help you realize your deepest dreams.
+                <br /> 
+            Sign up <i>now</i> to get started.</p> <!-- now kursywą -->
+            <p class="text_2">You <i>know</i> you want to.</p> <!-- know kursywą -->
         </div>
 
         <div class="box_2">
-        <p>Let's do this!</p>
-        <!-- TU MUSI BYĆ LISTA -->
+            <p class="text_1">Let's do this!</p>
+
+            <div class="list">
+                <form method="post"></form>
+                    <div class="left">
+                        <div class="column">
+                            <label for="first_name">FIRST NAME:</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+
+                        <div class="column">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+            
+                        <div class="column">
+                            <label for="password">PASSWORD:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </div>
+            
+                    <div class="right">
+                        <div class="column">
+                            <label for="last_name">LAST NAME:</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+
+                        <div class="column">
+                            <label for="phone_number">PHONE NUMBER:</label>
+                            <input type="tel" name="phone_number" id="phone_number">
+                        </div>
+
+                        <div class="column">
+                            <label for="confirm_password">CONFIRM PASSWORD:</label>
+                            <input type="password" name="password" id="confirm_password">
+                        </div> 
+                    </div>             
+                </form>
+            </div>
+            <!-- TU MUSI BYĆ LISTA -->
         </div>
 
         <div class="box_3">
-            <button>Create Account</button>
-            <p>Already have an account?</p>
-            <p>Log in</p> <!-- Tu musi być link, inny kolor -->
+            <button type="submit">Create Account</button>
+            <p class="text_1">Already have an account? <span class="green">Log in</span></p>
         </div>
-  </div>
-   
-
+    </div>
 </div>
- 
-
-
        <script src="script.js" async defer></script>
    </body>
 </html>
